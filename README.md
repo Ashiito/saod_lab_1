@@ -62,14 +62,14 @@
 ## Пример вывода
 При запуске программы на консоль выводится размер входного массива чисел и время выполнения каждого алгоритма сортировки (в миллисекундах):
 ```
-Array size: 5
-Selection Sort: 0.123 ms
-Bubble Sort: 0.098 ms
-Insertion Sort: 0.076 ms
-Merge Sort: 0.054 ms
-Heap Sort: 0.067 ms
-Quick Sort: 0.045 ms
-Quick Sort (Person): 0.032 ms
+Array size: 100000
+Selection Sort: 10026.2 ms
+Bubble Sort: 30611.5 ms
+Insertion Sort: 5967.97 ms
+Merge Sort: 48.574 ms
+Heap Sort: 36.087 ms
+Quick Sort: 18.101 ms
+Quick Sort (Person): 908.454 ms
 ```
 
 ## Особенности реализации
