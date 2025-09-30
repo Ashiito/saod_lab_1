@@ -122,5 +122,4 @@ Quick Sort (Person): 32.109 ms
 
 ![Детали выполнения сортировки для каждого алгоритма](https://github.com/Ashiito/saod_lab_1/blob/main/Figure_3.png)
 
-![pdf](https://github.com/Ashiito/saod_lab_1/blob/main/САОД_1.pdf)
-
+[📄 Скачать отчет (PDF)](https://github.com/Ashiito/saod_lab_1/blob/main/САОД_1.pdf)
