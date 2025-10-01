@@ -155,7 +155,7 @@ bool person_compare(const Person& a, const Person& b) {
     if (name_cmp != 0) return name_cmp < 0;
     int middle_cmp = str_compare(a.middle_name, b.middle_name);
     if (middle_cmp != 0) return middle_cmp < 0;
-    int n = 1; // 2nd letter (0-based index)
+    int n = 1;
     if (a.last_name[n] == '\0' || b.last_name[n] == '\0') {
         return str_compare(a.last_name, b.last_name) < 0;
     }
@@ -206,7 +206,6 @@ void quick_sort_person(Person* arr, int n) {
 }
 
 int main() {
-    // Reading numeric data from numbers.txt
     std::ifstream num_file("numbers.txt");
     if (!num_file.is_open()) {
         std::cerr << "Error opening numbers.txt" << std::endl;
@@ -247,7 +246,6 @@ int main() {
         auto end = std::chrono::high_resolution_clock::now();
         std::chrono::duration<double, std::milli> duration = end - start;
 
-        // Write sorted array to file
         std::ofstream out_file(sorts[i].filename);
         if (!out_file.is_open()) {
             std::cerr << "Error opening " << sorts[i].filename << std::endl;
@@ -264,7 +262,6 @@ int main() {
     }
     delete[] arr;
 
-    // Reading data for lexicographic sorting from people.txt
     std::ifstream people_file("people.txt");
     if (!people_file.is_open()) {
         std::cerr << "Error opening people.txt" << std::endl;
@@ -282,7 +279,6 @@ int main() {
     }
     people_file.close();
 
-    // Perform lexicographic sorting and save to file
     auto start = std::chrono::high_resolution_clock::now();
     quick_sort_person(people, m);
     auto end = std::chrono::high_resolution_clock::now();
@@ -303,3 +299,4 @@ int main() {
     delete[] people;
     return 0;
 }
+
